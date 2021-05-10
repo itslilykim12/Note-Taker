@@ -1,17 +1,1 @@
-[
-    {
-        "title":"Test Title",
-        "text":"Test text",
-        "id": "0"
-    },
-    {
-        "title": "Groceries",
-        "text": ["Chicken Breast", "Fruits", "Snacks"],
-        "id": "1"
-    },
-    {
-        "title": "Projects",
-        "text": ["Coding Bootcamp", "Note-Taker App", "Profile Generator"],
-        "id": "2"
-    }
-]
+[{"title":"Test Title","text":"Test text","id":"0"},{"title":"Groceries","text":["Chicken Breast","Fruits","Snacks"],"id":"1"},{"title":"Projects","text":["Coding Bootcamp","Note-Taker App","Profile Generator"],"id":"2"},{"title":"new texts","text":"skdfjlsdjf\n"}]
