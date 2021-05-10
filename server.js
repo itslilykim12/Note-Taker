@@ -51,11 +51,23 @@ app.post("/api/notes", (req,res) => {
         })
     });
 });
+//delete requests 
+app.delete("/api/notes/:id", (req,res) => {
+    const id = req.params.id ; 
+    readFileSync(path.join(__dirname, "./db/db.json"), "utf8")
+    .then((data) => {
+        allNotes = JSON.parse(data);
+        allNotes.splice(id,1);
+        writeFileSync(path.join(__dirname, "./db/db.json"), JSON.stringify(allNotes))
+        .then(() => {
+            console.log("delete db.json file");
+        })
+    });
+    res.json(id);
+});
 
 
-
-
-
+//LISTENER
 app.listen(PORT, () => {
     console.log(`API server now on ${PORT}`)
 });
